@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1 style="font-size: 2em;color: aquamarine;">Diaz Company</h1> <!-- heading = Título1 -->
+        <h2>Modernidad, Conexión y Seguridad</h2> <!-- Título2 -->
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <p> <a href="index.html">Volver atras</a> </p> <!-- Anchor (a) -->
+    </nav>
+    
+    <!-- Cuerpo principal -->
+    <main>
+        <section id="formContaco">
+
+            <h3>Escribenos ahora</h3>
+
+            <!-- Formulario -->
+            <form action="contactoRegistro.html" method="get">
+                <div>
+                    <label for="txtNombre">Ingrese su nombre</label>
+                    <input type="text" name="txtNombre" id="txtNombre" maxlength=50 required>
+                </div>
+                 <div>
+                    <label for="txtApellido">Ingrese su apellido</label>
+                    <input type="text" name="txtApellido" id="txtApellido" autocomplete="off" maxlength=54 required>
+                </div>
+                 <div>
+                     <label for="txtEmail">Ingrese su correo electronico</label>
+                     <input type="email" name="txtEmail" id="txtEmail" autocomplete="off" maxlength=128 required>
+                 </div>
+                 <div>
+                    <label for="numPhone">Ingrese su telefono o celular</label>
+                    <input type="tel" name="numPhone" id="numPhone" autocomplete="off" maxlength=13 minlength="7"> 
+                </div>
+
+                <!-- Seleccion de valor / selec -->
+                 <div>
+                    <label for="txtAsunto">Selecione su asunto del mensaje</label>
+                    <select name="txtAsunto" id="txtAsunto" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="compraMayor">Comprar productos por mayor</option>
+                         <option value="consultaDevolucion">Consulta para devolcuión de producto</option>
+                        <option value="consultaGeneral">Hacer consulta general</option>
+                    </select>
+                </div>
+
+                <!-- TextArea / Cuerpo de texto -->
+                <div>
+                    <label for="bodyDetalle">Ingrese su mensaje</label>
+                    <textarea name="bodyDetalle" id="bodyDetalle" cols="30" rows="8" required></textarea>
+                </div>
+
+                <!-- Input checkBox -->
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo">Autorizo el envío de publicidad e informacion comercial</label>
+                </div>
+                <!-- Input submit / boton de enviar -->
+                <div>
+                    <input type="button" value="Enviar">
+                </div>
+            </form>
+
+        </section>
+
+        <section id="ubicanos"->
+            <p>Av. Goyeneche - Cercado Arequipa <br>
+               Av. Heroes de la guerra del pacífico - Juliaca
+            </p>
+            <p>Telefonos: 967985599 - 951739410
+            </p>
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2706.427493801762!2d-71.52641047086715!3d-16.401119096723207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1679537356517!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </p>
+
+        </section>
+    </main>
+</body>
+</html>
